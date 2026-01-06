@@ -1,2 +1,0 @@
-# observers
-IntersectionObserver MutationObserver PerformanceObserver ResizeObserver 
