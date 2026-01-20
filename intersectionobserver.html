@@ -9,28 +9,20 @@
 </head>
 <body>
     <div class="io-container">
-        <div class="io-card-container">
-            <div class="io-card">This is the First card</div>
-            <div class="io-card">This is the Second card</div>
-            <div class="io-card">This is the Third card</div>
-            <div class="io-card">This is the Fourth card</div>
-            <div class="io-card">This is the Fifth card</div>
-            <div class="io-card">This is the Sixth card</div>
-            <div class="io-card">This is the Seventh card</div>
-            <div class="io-card">This is the Eighth card</div>
-            <div class="io-card">This is the Ninth card</div>
-            <div class="io-card">This is the Tenth card</div>
-            <div class="io-card">This is the Eleventh card</div>
-            <div class="io-card">This is the Twelfth card</div>
-            <div class="io-card">This is the Thirteenth card</div>
-            <div class="io-card">This is the Fourteenth card</div>
-            <div class="io-card">This is the Fifteenth card</div>
-            <div class="io-card">This is the Sixteenth card</div>
-            <div class="io-card">This is the Seventeenth card</div>
-            <div class="io-card">This is the Eighteenth card</div>
-            <div class="io-card">This is the Nineteenth card</div>
-            <div class="io-card">This is the Last card</div>
-        </div>
+        <div class="io-card-container"></div>
     </div>
+
+    <script>
+        const cards = [
+            'First', 'Second', 'Third', 'Fourth', 'Fifth',
+            'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth',
+            'Eleventh', 'Twelfth', 'Thirteenth', 'Fourteenth', 'Fifteenth',
+            'Sixteenth', 'Seventeenth', 'Eighteenth', 'Nineteenth', 'Last'
+        ];
+        const container = document.querySelector('.io-card-container');
+        container.innerHTML = cards.map(name => 
+            `<div class="io-card">This is the ${name} card</div>`
+        ).join('');
+    </script>
 </body>    
 </html>
